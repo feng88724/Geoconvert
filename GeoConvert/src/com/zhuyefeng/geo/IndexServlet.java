@@ -91,6 +91,10 @@ public class IndexServlet extends HttpServlet {
 	 * @throws Exception
 	 */
 	public static String doConvert(String coords) throws Exception {
+		if(coords == null || coords.trim().length() == 0) {
+			return null;
+		}
+		coords = coords.trim();
 		InputStream inputStream = null;
 		InputStreamReader inputStreamReader = null;
 		BufferedReader reader = null;
