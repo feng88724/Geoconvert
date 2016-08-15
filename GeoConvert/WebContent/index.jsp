@@ -7,6 +7,9 @@
 <title>经纬度转换</title>
 <script src="http://libs.useso.com/js/jquery/2.1.1-rc2/jquery.min.js"></script>
 <style type="text/css">
+html body {
+	font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", "FontAwesome", sans-serif;
+}
 .tab{
 	float:left;
 	min-width:200px;
@@ -32,14 +35,14 @@
 	padding:5px 20px;
 	font-size:13px;
 	text-align:center;
-	background-color: #e80000;
-	color:#fff;
+	background-color: #aaa;
+	color:#000;
 	margin-top:10px;
 	margin-bottom:10px;
 	display:inline-block;
 }
 .geo_button:hover {
-	background-color:#e85555;
+	background-color:#ccc;
 }
 .geo_result_container {
 	border:1px solid #ccc;
@@ -59,8 +62,8 @@
 </head>
 <body>
 <div class="tabs">
-	<a class="tab" data-type="2">GPS->Baidu</a>
-	<a class="tab active" data-type="1">Baidu->GPS</a>
+	<a class="tab" data-type="2">GPS -> Baidu</a>
+	<a class="tab active" data-type="1">Baidu -> GPS</a>
 </div>
 
 <div style="clear:both"></div>
